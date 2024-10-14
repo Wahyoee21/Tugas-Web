@@ -1,0 +1,41 @@
+body {
+    background-color: #1b1b1b;
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    text-align:center;
+    padding: 20px;
+}
+.container {
+    max-width: 75%;
+    margin:auto;
+    padding: 20px;
+    background-color: black;
+    border-radius: 10px;
+}
+.foto {
+    display: inline-flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 25px;
+    margin-top: 20px;
+    margin-bottom:20px
+}
+.anggota {
+    font-size:35px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px auto;
+}
+th, td {
+    border: 1px solid white;
+    padding: 8px;
+    text-align: center;
+}
+.detail-table {
+    display: none;
+    margin-top: 10px;
+    border-collapse: collapse;
+    width: 100%;
+}

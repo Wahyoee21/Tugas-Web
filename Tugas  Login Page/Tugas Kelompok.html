@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelompok Sidma</title>
+    <link rel="stylesheet" href="Tugas Kelompok.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="judul">Kelompok Sidma</h1>
+        <hr class="garis">
+        <p class="anggota">Anggota</p>
+        <div class="foto">
+            <div class="gambar-container">
+                <img src="tude.jpeg" alt="Gambar tude">
+                <p class="nama">Thoedze</p>
+                <button onclick="toggleDetails('detailTude')">Identitas</button>
+                <table id="detailTude" class="detail-table">
+                <tr>
+                    <th>Nama</th>
+                    <th>Kelas</th>
+                    <th>No Absen</th>
+                </tr>
+                <tr>
+                    <td>Pande Putu Gede Ngurah Pramana Artha</td>
+                    <td>11 RPL 2</td>
+                    <td>31</td>
+                </tr>
+            </table>
+            </div>
+            <div class="gambar-container">
+                <img src="bintang.jpeg" alt="Bounty Image 2">
+                <p class="nama">Adhyakz</p>
+                <button onclick="toggleDetails('detailBintang')">Identitas</button>
+                <table id="detailBintang" class="detail-table">
+                <tr>
+                    <th>Nama</th>
+                    <th>Kelas</th>
+                    <th>No Absen</th>
+                </tr>
+                <tr>
+                    <td>I Gede Made Adhaksya Bintang Prayoga</td>
+                    <td>11 RPL 2</td>
+                    <td>06</td>
+                </tr>
+            </table>
+            </div>
+            <div class="gambar-container">
+                <img src="wahyu.jpeg" alt="Bounty Image 3">
+                <p class="nama">Wahyouez</p>
+                <button onclick="toggleDetails('detailWahyu')">Identitas</button>
+                <table id="detailWahyu" class="detail-table">
+                <tr>
+                    <th>Nama</th>
+                    <th>Kelas</th>
+                    <th>No Absen</th>
+                </tr>
+                <tr>
+                    <td>Komang Wahyu Sedana Wira Saputra</td>
+                    <td>11 RPL 2</td>
+                    <td>21</td>
+                </tr>
+            </table>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleDetails(id) {
+            var table = document.getElementById(id);
+            if (table.style.display === "none" || table.style.display === "") {
+                table.style.display = "table";
+            } else {
+                table.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+/* Bordered form */
+form {
+    /* Membuat form memiliki border dengan warna hijau muda, tebal 3px, dan solid */
+    border: 3px solid #f1f1f1;
+    margin: 10px 30px 10px 30px;
+  }
+  
+  /* Full-width inputs */
+  input[type=text], input[type=password] {
+    /* Membuat input teks dan password selebar area kontennya */
+    width: 100%;
+    /* Memberi jarak antara isi input dengan tepi input */
+    padding: 12px 20px;
+    /* Memberi jarak antara input dengan elemen di atas dan bawahnya */
+    margin: 8px 0;
+    /* Membuat input sejajar dengan elemen lainnya dalam satu baris */
+    display: inline-block;
+    /* Membuat border input berwarna abu-abu muda dan tebal 1px */
+    border: 1px solid #ccc;
+    /* Membuat ukuran input tetap, termasuk border */
+    box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  button {
+    /* Membuat tombol dengan latar belakang hijau, warna teks putih, dan ukuran standar */
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    /* Menghilangkan border tombol */
+    border: none;
+    /* Membuat kursor berubah menjadi tangan saat menunjuk tombol */
+    cursor: pointer;
+    /* Membuat tombol selebar area kontennya */
+    width: 100%;
+  }
+  
+  /* Add a hover effect for buttons */
+  button:hover {
+    /* Membuat tombol sedikit transparan saat kursor menunjuknya */
+    opacity: 0.8;
+  }
+  
+  /* Extra style for the cancel button (red) */
+  .cancelbtn {
+    /* Membuat tombol batal dengan lebar otomatis, warna latar belakang merah, dan ukuran sedikit lebih kecil */
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+  .cancelbtn a{
+    text-decoration:none;
+    color:white;
+  }
+
+  /* Center the avatar image inside this container */
+  .imgcontainer {
+    /* Menempatkan gambar avatar di tengah dan memberi jarak ke atas dan bawah */
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
+  
+  /* Avatar image */
+  img.avatar {
+    /* Membuat gambar avatar selebar 40% dari area kontennya */
+    width: 40%;
+  }
+  
+  /* Add padding to containers */
+  .container {
+    /* Memberi jarak pada elemen di dalam container */
+    padding: 16px;
+  }
+  
+  /* The "Forgot password" text */
+  span.psw {
+    /* Menempatkan teks "Forgot password" di kanan atas dan memberi jarak ke atas */
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    /* Mengubah tampilan teks "Forgot password" dan tombol batal untuk layar kecil */
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
+  }

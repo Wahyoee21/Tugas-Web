@@ -1,0 +1,41 @@
+<!DOCTYPE html> <!-- Ngasi tau bahwa documentnya itu bertipe html-->
+<html lang="en"> <!-- Ngasi tau kalo bahasa yang digunakan itu bahasa inggris-->
+<head> <!-- Pengaturan dari web-nya yang tidak bisa dilihat secara langsung oleh user -->
+    <meta charset="UTF-8"> <!-- -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Nyesuain ukuran web dengan ukuran dari device pengguna-->
+    <title>Reset Password</title>
+    <link href="Resetpassword.css" rel="stylesheet">
+    <link rel="icon" type="Image" href="https://th.bing.com/th/id/OIP.ZE7ey2JHdK9BPdOYnESoMgHaHZ?w=205&h=204&c=7&r=0&o=5&pid=1.7">
+</head> 
+<body>
+    <form action="Projectregister.html"> <!--Buat bikin form biar bisa ngetik dalam textfieldnya-->
+        <div class="imgcontainer"> <!--Buat bikin tempat biar bisa gambarnya ditaroh disana-->
+          <img src="https://th.bing.com/th?id=OIP.USctpQSfLJUXGuGYDculewHaHa&w=250&h=250&c=8&rs=1&qlt=30&o=6&pid=3.1&rm=2.jpeg" alt="Avatar" class="avatar"> <!-- Gambar atau avatar dari user yang mau ngisi formulirnya ni-->
+        </div> <!--akhir dari divnyooooo-->
+
+        <div class="container"> <!-- Ni div yang bakal diisi sama tulisan tulisan dari formnya-->
+          <label for="uname"><b>Username</b></label> <!-- Label fungsinya buat ngisi text disebelah inputan-->
+          <input type="text" placeholder="Enter Username" name="uname" required> <!-- Ngebuat inputan yang bertipe text yg bisa diberikan nilai oleh usernya-->
+      
+          <label for="uname"><b>Gmail</b></label> <!-- Label fungsinya buat ngisi text disebelah inputan-->
+          <input type="email" placeholder="Enter Gmail" name="uname" required> <!-- Ngebuat inputan yang bertipe text yg bisa diberikan nilai oleh usernya-->
+
+          <label for="psw"><b>New Password</b></label> <!-- Label yang fungsinya ngisi text disebelah inputan -->
+          <input type="password" placeholder="Enter Password" name="psw" required> <!-- Ngebuat inputan yang bertipe text yg bisa diberikan nilai oleh usernya-->
+      
+          <label for="psw"><b>Confirm Password</b></label> <!-- Label yang fungsinya ngisi text disebelah inputan -->
+          <input type="password" placeholder="Enter Password" name="psw" required> <!-- Ngebuat inputan yang bertipe text yg bisa diberikan nilai oleh usernya-->
+
+          <button type="submit">Confirm</button> <!-- Button yang bertipe submit (jadi kalo dipencet dia bakal store datanya kemana kaden dan data yang ada di formnya itu bakal kereset)-->
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me <!-- Ini khusus ni, soalnya si inputnya langsung dimasukin ke label jadinya si label gak perlu manggil manggil atribut yang lain soalnya atributnya sudah ada dalam si inputan yang bertipe checkbox!! jadinya teksnya itu tinggal ditaro di sebelah inputan-->
+          </label>
+        </div>
+      
+        <div class="container" style="background-color:#f1f1f1"> <!-- div yang dibuat biar bisa diisi sama cancel button sama forgor password-->
+          <button type="button" class="cancelbtn"><a href="Projectlogin.html" target="_top">Cancel</a></button> <!--button yang bertipe button yang artinya dia bisa diklik tapi tidak menimbulkan atau menyebabkan sesuatu-->
+        </div>
+      </form>
+      <script type="text/javascript" src="projectlogin.js"></script> <!-- Relasi antara html ma js-nya-->
+</body>
+</html>
